@@ -51,7 +51,7 @@ body {
 
 .container svg {
   /* define the SVG area to be at most 500px wide (and therefore 250px tall, as defined by the viewbox attribute) */
-  /*width: 90vw;
+  width: 90vw;
   max-width: 500px;
   /* separate the SVG from the underlying content  */
   /*margin-bottom: 1.5rem;
