@@ -117,12 +117,12 @@ function generatePathElement(d) {
   // "http://www.w3.org/2000/svg" and the element to be included
   let pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
   // include attributes for the **d** attribute, the fill and the stroke
-  /*          pathElement.setAttribute("d", d);
-            pathElement.setAttribute("fill", "none");
-            pathElement.setAttribute("stroke", "white");
-            pathElement.setAttribute("stroke-width", "2px");
-            // return the element
-            return pathElement;
+  pathElement.setAttribute("d", d);
+  pathElement.setAttribute("fill", "none");
+  pathElement.setAttribute("stroke", "white");
+  pathElement.setAttribute("stroke-width", "2px");
+  // return the element
+  /*          return pathElement;
           }
 
           // create a function which updates the CSS variables, considering the values of the path element
