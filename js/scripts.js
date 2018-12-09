@@ -122,9 +122,9 @@ function generatePathElement(d) {
   pathElement.setAttribute("stroke", "white");
   pathElement.setAttribute("stroke-width", "2px");
   // return the element
-  /*          return pathElement;
-          }
-
+  return pathElement;
+}
+/*
           // create a function which updates the CSS variables, considering the values of the path element
           function updateVariables(element) {
             // retrieve the length of the path element
