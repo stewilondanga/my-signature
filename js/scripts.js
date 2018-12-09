@@ -16,7 +16,7 @@ const btn = document.querySelector("button");
 btn.addEventListener("click", handleClick);
 
 // initialize a variable for the length of the signature, which can be updated with the input of type range
-/*let signatureLength = 150;
+let signatureLength = 150;
 /*
 const inputRange = document.querySelector("input[type='range']");
 inputRange.addEventListener("change", handleChange);
