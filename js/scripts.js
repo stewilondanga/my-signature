@@ -69,15 +69,15 @@ function handleClick() {
 
 }
 
-/*
-      // create a function which includes in the SVG element only the nested element specified in the HTML markup
-      function cleanSVG() {
-        svgFrame.innerHTML =
-        `
+
+// create a function which includes in the SVG element only the nested element specified in the HTML markup
+function cleanSVG() {
+  svgFrame.innerHTML =
+    `
         <line x1="2" y1="50" x2="98" y2="50" stroke="white" stroke-width="1.5px"/>
         `;
-      }
-
+}
+/*
       // create a function which creates a string for the **d** attribute, made out of arc commands and some degree of randomness
       function generatePathAttribute() {
         // begin from a random point in the svg canvas
