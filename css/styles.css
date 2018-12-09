@@ -137,13 +137,14 @@ when active, flip the color and background colors */
   position: absolute;
   top: 2rem;
   /* reduce opacity to avoid the text from overpowering the input elements to which they are visually connected */
-  /*  opacity: 0.2;
+  opacity: 0.2;
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
   transform: rotate(-45deg);
 }
 
+/*
 .container details .settings label:after {
   left: -3rem;
   content: 'nope';
@@ -155,13 +156,13 @@ when active, flip the color and background colors */
 }
 
 /* define the class which animates the svg path element */
-  /*.animation {
+/*.animation {
   animation: drawPath var(--animation-duration) ease-in forwards;
 }
 
 
 /* animate the stroke of the path element, to draw the element into view */
-  /*@-moz-keyframes drawPath {
+/*@-moz-keyframes drawPath {
   0% {
     stroke-dasharray: var(--dasharray);
     stroke-dashoffset: var(--dashoffset);
@@ -199,7 +200,7 @@ when active, flip the color and background colors */
 }
 
 /* animate the element(s) into view from the left side of the screen */
-  /*@-moz-keyframes introduceElement {
+/*@-moz-keyframes introduceElement {
   0% {
     opacity: 0;
     transform: translateX(-25vw);
