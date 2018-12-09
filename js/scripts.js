@@ -10,9 +10,9 @@ var navigate = (function() {
 /* target the svg usued for the signature and the button with the page's functionality
  add a click event listener, following which generate the signature in the viewbox
 */
-/*const svgFrame = document.querySelector("svg");
+const svgFrame = document.querySelector("svg");
 
-const btn = document.querySelector("button");
+/*const btn = document.querySelector("button");
 btn.addEventListener("click", handleClick);
 
 // initialize a variable for the length of the signature, which can be updated with the input of type range
