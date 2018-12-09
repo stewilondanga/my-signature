@@ -155,10 +155,9 @@ when active, flip the color and background colors */
 }
 
 /* define the class which animates the svg path element */
-/*.animation {
+.animation {
   animation: drawPath var(--animation-duration) ease-in forwards;
 }
-
 
 /* animate the stroke of the path element, to draw the element into view */
 /*@-moz-keyframes drawPath {
