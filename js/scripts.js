@@ -131,12 +131,12 @@ function updateVariables(element) {
   let length = element.getTotalLength();
 
   // update the variables for the values of stroke-dasharray and stroke-dashoffset to match the length of the path element
-  /*            element.style.setProperty("--dasharray", length);
-              element.style.setProperty("--dashoffset", length);
-              element.style.setProperty("--animation-duration", `1s`);
+  element.style.setProperty("--dasharray", length);
+  element.style.setProperty("--dashoffset", length);
+  element.style.setProperty("--animation-duration", `1s`);
 
-              // include stroke-dasharray and stroke-dashoffset attributes for the path element (which is to be animated from the value specified by the length to 0)
-              element.setAttribute("stroke-dasharray", length);
+  // include stroke-dasharray and stroke-dashoffset attributes for the path element (which is to be animated from the value specified by the length to 0)
+  /*            element.setAttribute("stroke-dasharray", length);
               element.setAttribute("stroke-dashoffset", length);
             }
 
