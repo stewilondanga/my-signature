@@ -121,7 +121,7 @@ when active, flip the color and background colors */
 
 .container details .settings label {
   /* style the labels' text */
-  /*font-size: 1.15rem;
+  font-size: 1.15rem;
   text-align: center;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
