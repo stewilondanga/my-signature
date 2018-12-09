@@ -59,10 +59,10 @@ function handleClick() {
   let pathAttribute = generatePathAttribute();
 
   // call a function which creates the SVG element according to the generated attribute
-  /*      let pathElement = generatePathElement(pathAttribute);
+  let pathElement = generatePathElement(pathAttribute);
 
-        // call a function which updates the CSS variables depending on the length of the SVG stroke
-        updateVariables(pathElement);
+  // call a function which updates the CSS variables depending on the length of the SVG stroke
+  /*      updateVariables(pathElement);
 
         // call a function which appends the path element to the SVG frame
         appendElement(pathElement);
