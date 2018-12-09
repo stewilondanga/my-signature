@@ -16,6 +16,14 @@ variables updated in the script according to the length of the path element
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #f8f8fa;
+  background: linear-gradient(to top right, #463b89, #6c51a4);
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -42,13 +50,6 @@ variables updated in the script according to the length of the path element
 
 
 
-body {
-  min-height: 100vh;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  color: #f8f8fa;
-  background: linear-gradient(to top right, #463b89, #6c51a4);
-}
 /* display the contents of the container in a single column layout */
 /*.container {
   display: flex;
