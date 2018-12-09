@@ -20,7 +20,7 @@ let signatureLength = 150;
 
 const inputRange = document.querySelector("input[type='range']");
 inputRange.addEventListener("change", handleChange);
-/*
+
 function handleChange(e) {
   // e.target.value returns an integer between 100 and 200
   // this describes exactly the range wanted for the signature
@@ -28,7 +28,7 @@ function handleChange(e) {
   signatureLength = e.target.value;
   console.log(signatureLength);
 }
-
+/*
 
 function handleClick() {
   /* upon hitting the "generate signature" button, the following procedure enabled
