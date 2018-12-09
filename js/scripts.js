@@ -139,14 +139,14 @@ function updateVariables(element) {
   element.setAttribute("stroke-dasharray", length);
   element.setAttribute("stroke-dashoffset", length);
 }
+
+// create a function which appends the element to the SVG frame, after adding the class which animates the path element
+function appendElement(element) {
+  element.setAttribute("class", "animation");
+  svgFrame.appendChild(element);
+}
+
 /*
-            // create a function which appends the element to the SVG frame, after adding the class which animates the path element
-            function appendElement(element) {
-              element.setAttribute("class", "animation");
-              svgFrame.appendChild(element);
-            }
-
-
             // create a function which generates a random number, between a range which is delimited by the arguments of the function
             function randomInRange(min, max) {
               // the function returns a random number between min and max
