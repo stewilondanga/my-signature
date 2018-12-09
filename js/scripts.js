@@ -124,11 +124,11 @@ function generatePathElement(d) {
   // return the element
   return pathElement;
 }
-/*
-          // create a function which updates the CSS variables, considering the values of the path element
-          function updateVariables(element) {
-            // retrieve the length of the path element
-            let length = element.getTotalLength();
+
+// create a function which updates the CSS variables, considering the values of the path element
+function updateVariables(element) {
+  // retrieve the length of the path element
+  /*          let length = element.getTotalLength();
 
             // update the variables for the values of stroke-dasharray and stroke-dashoffset to match the length of the path element
             element.style.setProperty("--dasharray", length);
