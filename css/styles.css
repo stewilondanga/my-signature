@@ -88,12 +88,12 @@ when active, flip the color and background colors */
   background: rgba(248, 248, 250, 0.1);
 }
 
-/*
 .container button:active {
   background: #f8f8fa;
   color: #422891;
 }
 
+/*
 .container details {
   /* style the details box similarly to the button */
 /*border: 2px solid #f8f8fa;
