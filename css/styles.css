@@ -113,7 +113,7 @@ when active, flip the color and background colors */
 
 .container details .settings {
   /* display the label and input element in a single column layout */
-  /*display: flex;
+  display: flex;
   flex-direction: column;
   /* separate the div from the summary element which stands above it */
   /*  margin-top: 1rem;
