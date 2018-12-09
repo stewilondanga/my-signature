@@ -77,7 +77,7 @@ body {
   /* margin to separate the underlying content */
   margin-bottom: 3.5rem;
   /* transition for the hover and active states */
-  /*transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
   /* animate the button element much alike the svg, but briefly following the same element */
   /*animation: introduceElement 0.5s 0.4s cubic-bezier(.22, -0.3, .68, 1.44) both;
 }
