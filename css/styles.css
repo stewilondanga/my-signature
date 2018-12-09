@@ -95,7 +95,7 @@ when active, flip the color and background colors */
 
 .container details {
   /* style the details box similarly to the button */
-  /*border: 2px solid #f8f8fa;
+  border: 2px solid #f8f8fa;
   border-radius: 10px;
   /* padding to separate the text from the surrounding borders
   horizontal padding to be matched by the div nested in the element      */
