@@ -149,7 +149,6 @@ when active, flip the color and background colors */
   content: 'nope';
 }
 
-/*
 .container details .settings label:before {
   right: -3rem;
   content: 'yep';
