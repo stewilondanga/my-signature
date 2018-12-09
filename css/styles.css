@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+/*
+define CSS variables used in the animation of the path element to precisely animate the length of the element, in a reasonable time-frame
+variables updated in the script according to the length of the path element
+*/
 /*body {
   text-align: center;
   font-family: courier;
@@ -23,10 +27,6 @@
 }
 
 
-/*
-define CSS variables used in the animation of the path element to precisely animate the length of the element, in a reasonable time-frame
-variables updated in the script according to the length of the path element
-*/
 /*:root {
   --dasharray: 100;
   --dashoffset: 100;
