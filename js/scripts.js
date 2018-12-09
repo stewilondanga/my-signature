@@ -1,10 +1,10 @@
-/*var navigate = (function() {
-	$('.dd').toggle();
-	$('.dd_btn').click(function() {
-		var dataName = $(this).attr('data-name');
-		$('.dd').hide();
-		$('.' + dataName).toggle();
-	});
+var navigate = (function() {
+  $('.dd').toggle();
+  $('.dd_btn').click(function() {
+    var dataName = $(this).attr('data-name');
+    $('.dd').hide();
+    $('.' + dataName).toggle();
+  });
 })();
 
 /* target the svg usued for the signature and the button with the page's functionality
@@ -96,7 +96,7 @@ function generatePathAttribute() {
     - include this distance as the radius of the arcs
     - increment the length by the same distance value
     */
-  /*  let xCoor = randomInRange(10,91);
+/*  let xCoor = randomInRange(10,91);
     let yCoor = randomInRange(5, 46);
 
     let distance = Math.sqrt(Math.pow((xCoor - xBegin), 2) + Math.pow((yCoor - yBegin), 2));
