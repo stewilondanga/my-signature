@@ -84,10 +84,11 @@ body {
 
 /* on hover slightly whiten the background
 when active, flip the color and background colors */
-/*.container button:hover {
-  background: rgba(248,248,250,0.1);
+.container button:hover {
+  background: rgba(248, 248, 250, 0.1);
 }
 
+/*
 .container button:active {
   background: #f8f8fa;
   color: #422891;
