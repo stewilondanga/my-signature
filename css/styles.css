@@ -205,59 +205,71 @@ when active, flip the color and background colors */
 }
 
 /* animate the element(s) into view from the left side of the screen */
-/*@-moz-keyframes introduceElement {
+@-moz-keyframes introduceElement {
   0% {
     opacity: 0;
     transform: translateX(-25vw);
   }
+
   50% {
     opacity: 1;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes introduceElement {
-  0% {
-    opacity: 0;
-    transform: translateX(-25vw);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@-o-keyframes introduceElement {
-  0% {
-    opacity: 0;
-    transform: translateX(-25vw);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes introduceElement {
-  0% {
-    opacity: 0;
-    transform: translateX(-25vw);
-  }
-  50% {
-    opacity: 1;
-  }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
+@-webkit-keyframes introduceElement {
+  0% {
+    opacity: 0;
+    transform: translateX(-25vw);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes introduceElement {
+  0% {
+    opacity: 0;
+    transform: translateX(-25vw);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes introduceElement {
+  0% {
+    opacity: 0;
+    transform: translateX(-25vw);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*
 .containers {
   width: 520px;
   margin: 20px auto;
