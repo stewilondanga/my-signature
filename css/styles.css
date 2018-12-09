@@ -99,7 +99,7 @@ when active, flip the color and background colors */
   border-radius: 10px;
   /* padding to separate the text from the surrounding borders
   horizontal padding to be matched by the div nested in the element      */
-  /*padding: 1rem 3rem;
+  padding: 1rem 3rem;
   /* animate the details element much alike the button and the svg, but briefly following the button element */
   /*animation: introduceElement 0.5s 0.5s cubic-bezier(.22, -0.3, .68, 1.44) both;
 }
