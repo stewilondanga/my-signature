@@ -136,10 +136,10 @@ function updateVariables(element) {
   element.style.setProperty("--animation-duration", `1s`);
 
   // include stroke-dasharray and stroke-dashoffset attributes for the path element (which is to be animated from the value specified by the length to 0)
-  /*            element.setAttribute("stroke-dasharray", length);
-              element.setAttribute("stroke-dashoffset", length);
-            }
-
+  element.setAttribute("stroke-dasharray", length);
+  element.setAttribute("stroke-dashoffset", length);
+}
+/*
             // create a function which appends the element to the SVG frame, after adding the class which animates the path element
             function appendElement(element) {
               element.setAttribute("class", "animation");
