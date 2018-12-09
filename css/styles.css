@@ -144,12 +144,12 @@ when active, flip the color and background colors */
   transform: rotate(-45deg);
 }
 
-/*
 .container details .settings label:after {
   left: -3rem;
   content: 'nope';
 }
 
+/*
 .container details .settings label:before {
   right: -3rem;
   content: 'yep';
