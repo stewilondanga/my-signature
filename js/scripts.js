@@ -86,9 +86,9 @@ function generatePathAttribute() {
   let dAttribute = `M ${xBegin} ${yBegin}`;
 
   // from the beginning point, create arc elements until the lenght of the arc elements is less than the signature length, continue appending arc elements
-  /*          let length = 0;
+  let length = 0;
 
-            while(length < signatureLength) {
+  /*          while(length < signatureLength) {
               /*
               while the length is less than the arbitrary value
               - compute a new point in which the arc ends
