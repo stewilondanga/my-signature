@@ -104,41 +104,40 @@ when active, flip the color and background colors */
   animation: introduceElement 0.5s 0.5s cubic-bezier(.22, -0.3, .68, 1.44) both;
 }
 
-/*
 .container details summary {
   /* style the summary's text similarly to the button's text */
-/*font-size: 1.2rem;
+  /*font-size: 1.2rem;
   text-transform: uppercase;
   cursor: pointer;
 }
 /*
 .container details .settings {
   /* display the label and input element in a single column layout */
-/*display: flex;
+  /*display: flex;
   flex-direction: column;
   /* separate the div from the summary element which stands above it */
-/*  margin-top: 1rem;
+  /*  margin-top: 1rem;
 }
 /*
 .container details .settings label {
   /* style the labels' text */
-/*font-size: 1.15rem;
+  /*font-size: 1.15rem;
   text-align: center;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   /* margin to slightly separate the label from the surrounding input element */
-/*margin: 0.8rem 0;
+  /*margin: 0.8rem 0;
   /* position relative to absolute position connected pseudo elements */
-/*position: relative;
+  /*position: relative;
 }
 
 .container details .settings label:after,
 .container details .settings label:before {
   /* include with pseudo elements simple pieces text, at either end of the input element */
-/*position: absolute;
+  /*position: absolute;
   top: 2rem;
   /* reduce opacity to avoid the text from overpowering the input elements to which they are visually connected */
-/*  opacity: 0.2;
+  /*  opacity: 0.2;
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
@@ -156,13 +155,13 @@ when active, flip the color and background colors */
 }
 
 /* define the class which animates the svg path element */
-/*.animation {
+  /*.animation {
   animation: drawPath var(--animation-duration) ease-in forwards;
 }
 
 
 /* animate the stroke of the path element, to draw the element into view */
-/*@-moz-keyframes drawPath {
+  /*@-moz-keyframes drawPath {
   0% {
     stroke-dasharray: var(--dasharray);
     stroke-dashoffset: var(--dashoffset);
@@ -200,7 +199,7 @@ when active, flip the color and background colors */
 }
 
 /* animate the element(s) into view from the left side of the screen */
-/*@-moz-keyframes introduceElement {
+  /*@-moz-keyframes introduceElement {
   0% {
     opacity: 0;
     transform: translateX(-25vw);
