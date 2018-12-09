@@ -56,46 +56,46 @@ function handleClick() {
 
   // call a function which generates a random series of commands for the path element
   // the function returns a string which is used in the d attribute of a path element
-  /*    let pathAttribute = generatePathAttribute();
+  let pathAttribute = generatePathAttribute();
 
-      // call a function which creates the SVG element according to the generated attribute
-      let pathElement = generatePathElement(pathAttribute);
+  // call a function which creates the SVG element according to the generated attribute
+  /*      let pathElement = generatePathElement(pathAttribute);
 
-      // call a function which updates the CSS variables depending on the length of the SVG stroke
-      updateVariables(pathElement);
+        // call a function which updates the CSS variables depending on the length of the SVG stroke
+        updateVariables(pathElement);
 
-      // call a function which appends the path element to the SVG frame
-      appendElement(pathElement);
+        // call a function which appends the path element to the SVG frame
+        appendElement(pathElement);
 
-    }
+      }
 
 
-    // create a function which includes in the SVG element only the nested element specified in the HTML markup
-    function cleanSVG() {
-      svgFrame.innerHTML =
-      `
-      <line x1="2" y1="50" x2="98" y2="50" stroke="white" stroke-width="1.5px"/>
-      `;
-    }
+      // create a function which includes in the SVG element only the nested element specified in the HTML markup
+      function cleanSVG() {
+        svgFrame.innerHTML =
+        `
+        <line x1="2" y1="50" x2="98" y2="50" stroke="white" stroke-width="1.5px"/>
+        `;
+      }
 
-    // create a function which creates a string for the **d** attribute, made out of arc commands and some degree of randomness
-    function generatePathAttribute() {
-      // begin from a random point in the svg canvas
-      let xBegin = randomInRange(10,91);
-      let yBegin = randomInRange(5, 46);
-      let dAttribute = `M ${xBegin} ${yBegin}`;
+      // create a function which creates a string for the **d** attribute, made out of arc commands and some degree of randomness
+      function generatePathAttribute() {
+        // begin from a random point in the svg canvas
+        let xBegin = randomInRange(10,91);
+        let yBegin = randomInRange(5, 46);
+        let dAttribute = `M ${xBegin} ${yBegin}`;
 
-      // from the beginning point, create arc elements until the lenght of the arc elements is less than the signature length, continue appending arc elements
-      let length = 0;
+        // from the beginning point, create arc elements until the lenght of the arc elements is less than the signature length, continue appending arc elements
+        let length = 0;
 
-      while(length < signatureLength) {
-        /*
-        while the length is less than the arbitrary value
-        - compute a new point in which the arc ends
-        - compute the distance as the hypotenuse of the triangle connecting the new and previous point
-        - include this distance as the radius of the arcs
-        - increment the length by the same distance value
-        */
+        while(length < signatureLength) {
+          /*
+          while the length is less than the arbitrary value
+          - compute a new point in which the arc ends
+          - compute the distance as the hypotenuse of the triangle connecting the new and previous point
+          - include this distance as the radius of the arcs
+          - increment the length by the same distance value
+          */
   /*  let xCoor = randomInRange(10,91);
       let yCoor = randomInRange(5, 46);
 
