@@ -134,7 +134,7 @@ when active, flip the color and background colors */
 .container details .settings label:after,
 .container details .settings label:before {
   /* include with pseudo elements simple pieces text, at either end of the input element */
-  /*position: absolute;
+  position: absolute;
   top: 2rem;
   /* reduce opacity to avoid the text from overpowering the input elements to which they are visually connected */
   /*  opacity: 0.2;
