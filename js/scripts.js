@@ -146,10 +146,10 @@ function appendElement(element) {
   svgFrame.appendChild(element);
 }
 
-/*
-            // create a function which generates a random number, between a range which is delimited by the arguments of the function
-            function randomInRange(min, max) {
-              // the function returns a random number between min and max
-              // max excluded
-              return Math.floor(Math.random() * (max-min)) + min;
-            }
+
+// create a function which generates a random number, between a range which is delimited by the arguments of the function
+function randomInRange(min, max) {
+  // the function returns a random number between min and max
+  // max excluded
+  return Math.floor(Math.random() * (max - min)) + min;
+}
