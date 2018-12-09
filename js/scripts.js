@@ -96,60 +96,60 @@ function generatePathAttribute() {
     - include this distance as the radius of the arcs
     - increment the length by the same distance value
     */
-    /*  let xCoor = randomInRange(10,91);
-        let yCoor = randomInRange(5, 46);
+    let xCoor = randomInRange(10, 91);
+    let yCoor = randomInRange(5, 46);
 
-        let distance = Math.sqrt(Math.pow((xCoor - xBegin), 2) + Math.pow((yCoor - yBegin), 2));
-        xBegin = xCoor;
-        yBegin = yCoor;
-        dAttribute += `A ${distance} ${distance} 0 0 0 ${xCoor} ${yCoor}`;
-        length += distance;
+    let distance = Math.sqrt(Math.pow((xCoor - xBegin), 2) + Math.pow((yCoor - yBegin), 2));
+    xBegin = xCoor;
+    yBegin = yCoor;
+    dAttribute += `A ${distance} ${distance} 0 0 0 ${xCoor} ${yCoor}`;
+    length += distance;
+  }
+  /*
+        // return the string making up the **d** attribute
+        return `${dAttribute}`;
       }
 
-      // return the string making up the **d** attribute
-      return `${dAttribute}`;
-    }
+      // create a function which creates the path element with the generated **d** attribute
+      function generatePathElement(d) {
+        // when creating an SVG element from JS, use the createElementNS() function
+        // this accept two arguments
+        // "http://www.w3.org/2000/svg" and the element to be included
+        let pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        // include attributes for the **d** attribute, the fill and the stroke
+        pathElement.setAttribute("d", d);
+        pathElement.setAttribute("fill", "none");
+        pathElement.setAttribute("stroke", "white");
+        pathElement.setAttribute("stroke-width", "2px");
+        // return the element
+        return pathElement;
+      }
 
-    // create a function which creates the path element with the generated **d** attribute
-    function generatePathElement(d) {
-      // when creating an SVG element from JS, use the createElementNS() function
-      // this accept two arguments
-      // "http://www.w3.org/2000/svg" and the element to be included
-      let pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      // include attributes for the **d** attribute, the fill and the stroke
-      pathElement.setAttribute("d", d);
-      pathElement.setAttribute("fill", "none");
-      pathElement.setAttribute("stroke", "white");
-      pathElement.setAttribute("stroke-width", "2px");
-      // return the element
-      return pathElement;
-    }
+      // create a function which updates the CSS variables, considering the values of the path element
+      function updateVariables(element) {
+        // retrieve the length of the path element
+        let length = element.getTotalLength();
 
-    // create a function which updates the CSS variables, considering the values of the path element
-    function updateVariables(element) {
-      // retrieve the length of the path element
-      let length = element.getTotalLength();
+        // update the variables for the values of stroke-dasharray and stroke-dashoffset to match the length of the path element
+        element.style.setProperty("--dasharray", length);
+        element.style.setProperty("--dashoffset", length);
+        element.style.setProperty("--animation-duration", `1s`);
 
-      // update the variables for the values of stroke-dasharray and stroke-dashoffset to match the length of the path element
-      element.style.setProperty("--dasharray", length);
-      element.style.setProperty("--dashoffset", length);
-      element.style.setProperty("--animation-duration", `1s`);
+        // include stroke-dasharray and stroke-dashoffset attributes for the path element (which is to be animated from the value specified by the length to 0)
+        element.setAttribute("stroke-dasharray", length);
+        element.setAttribute("stroke-dashoffset", length);
+      }
 
-      // include stroke-dasharray and stroke-dashoffset attributes for the path element (which is to be animated from the value specified by the length to 0)
-      element.setAttribute("stroke-dasharray", length);
-      element.setAttribute("stroke-dashoffset", length);
-    }
-
-    // create a function which appends the element to the SVG frame, after adding the class which animates the path element
-    function appendElement(element) {
-      element.setAttribute("class", "animation");
-      svgFrame.appendChild(element);
-    }
+      // create a function which appends the element to the SVG frame, after adding the class which animates the path element
+      function appendElement(element) {
+        element.setAttribute("class", "animation");
+        svgFrame.appendChild(element);
+      }
 
 
-    // create a function which generates a random number, between a range which is delimited by the arguments of the function
-    function randomInRange(min, max) {
-      // the function returns a random number between min and max
-      // max excluded
-      return Math.floor(Math.random() * (max-min)) + min;
-    }
+      // create a function which generates a random number, between a range which is delimited by the arguments of the function
+      function randomInRange(min, max) {
+        // the function returns a random number between min and max
+        // max excluded
+        return Math.floor(Math.random() * (max-min)) + min;
+      }
