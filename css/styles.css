@@ -126,7 +126,7 @@ when active, flip the color and background colors */
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   /* margin to slightly separate the label from the surrounding input element */
-  /*margin: 0.8rem 0;
+  margin: 0.8rem 0;
   /* position relative to absolute position connected pseudo elements */
   /*position: relative;
 }
