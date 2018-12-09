@@ -105,11 +105,11 @@ function generatePathAttribute() {
     dAttribute += `A ${distance} ${distance} 0 0 0 ${xCoor} ${yCoor}`;
     length += distance;
   }
-  /*
-        // return the string making up the **d** attribute
-        return `${dAttribute}`;
-      }
 
+  // return the string making up the **d** attribute
+  return `${dAttribute}`;
+}
+/*
       // create a function which creates the path element with the generated **d** attribute
       function generatePathElement(d) {
         // when creating an SVG element from JS, use the createElementNS() function
