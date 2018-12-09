@@ -40,7 +40,7 @@ body {
 }
 
 /* display the contents of the container in a single column layout */
-/*.container {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,6 +49,7 @@ body {
   padding: 1rem;
 }
 
+/*
 .container svg {
   /* define the SVG area to be at most 500px wide (and therefore 250px tall, as defined by the viewbox attribute) */
 /*width: 90vw;
